@@ -12,7 +12,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    //button variables masarap
+    //button variables
     Button signup_btn,login_btn;
     //edit text variables
     EditText username, password;
