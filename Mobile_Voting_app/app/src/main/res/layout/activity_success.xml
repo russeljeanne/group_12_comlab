@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Success">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="25dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bungee"
+                android:textSize="25sp"
+                android:text="Choose wisely before you vote."
+                android:layout_marginBottom="40dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bungee"
+                android:textSize="17sp"
+                android:text="President"/>
+           <RadioGroup
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content">
+               <RadioButton
+                   android:id="@+id/chk_pres1"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="President 1"/>
+               <RadioButton
+                   android:id="@+id/chk_pres2"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="President 2"/>
+           </RadioGroup>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bungee"
+                android:textSize="17sp"
+                android:text="Vice President"/>
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/chk_vicePres1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vice President 1"/>
+                <RadioButton
+                    android:id="@+id/chk_vicePres2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="VicePresident 2"/>
+            </RadioGroup>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bungee"
+                android:textSize="17sp"
+                android:text="Secretary"/>
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/chk_sec1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Secretary 1"/>
+                <RadioButton
+                    android:id="@+id/chk_sec2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Secretary 2"/>
+            </RadioGroup>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bungee"
+                android:textSize="17sp"
+                android:text="Sub Secretary"/>
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/chk_subSec1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sub Secretary 1"/>
+                <RadioButton
+                    android:id="@+id/chk_subSec2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sub Secretary 2"/>
+            </RadioGroup>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bungee"
+                android:textSize="17sp"
+                android:text="Treasurer"/>
+           <RadioGroup
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content">
+               <RadioButton
+                   android:id="@+id/chk_tres1"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Treasurer 1"/>
+               <RadioButton
+                   android:id="@+id/chk_tres2"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Treasurer 2"/>
+           </RadioGroup>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bungee"
+                android:textSize="17sp"
+                android:text="Sub Treasurer"/>
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/chk_subTres1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sub Treasurer 1"/>
+                <RadioButton
+                    android:id="@+id/chk_subTres2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sub Treasurer 2"/>
+            </RadioGroup>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bungee"
+                android:textSize="17sp"
+                android:text="PIO"/>
+            <CheckBox
+                android:id="@+id/chk_pio1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PIO 1"/>
+            <CheckBox
+                android:id="@+id/chk_pio2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PIO 2"/>
+            <CheckBox
+                android:id="@+id/chk_pio3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PIO 3"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bungee"
+                android:textSize="17sp"
+                android:text="AUDITOR"/>
+            <CheckBox
+                android:id="@+id/chk_auditor1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Auditor 1"/>
+            <CheckBox
+                android:id="@+id/chk_auditor2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Auditor 2"/>
+            <CheckBox
+                android:id="@+id/chk_auditor3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Auditor 3"/>
+
+
+            <Button
+                android:id="@+id/btnSubmitVote"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#008000"
+                android:textColor="#fff"
+                android:text="Submit"
+                android:layout_marginTop="30dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>
