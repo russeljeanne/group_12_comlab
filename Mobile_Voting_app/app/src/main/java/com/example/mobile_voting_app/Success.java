@@ -32,7 +32,8 @@ public class Success extends AppCompatActivity {
     CheckBox chk_pio1,chk_pio2,chk_pio3;
     CheckBox chk_auditor1,chk_auditor2,chk_auditor3;
     FirebaseDatabase database;
-    DatabaseReference reference;
+    DatabaseReference reference,reference1,reference2,reference3,reference4,reference5,reference6,reference7,reference8,reference9,reference10,reference11,reference12,
+            reference13,reference14,reference15,reference16,reference17,reference18;
     int i=0;
     EditText name;
 
@@ -78,6 +79,24 @@ public class Success extends AppCompatActivity {
         final String select_auditor3_ST = "Auditor 3";
 
         reference = database.getInstance().getReference().child("User");
+        reference1 = database.getInstance().getReference().child("President_1");
+        reference2 = database.getInstance().getReference().child("President_2");
+        reference3 = database.getInstance().getReference().child("VicePresident_1");
+        reference4 = database.getInstance().getReference().child("VicePresident_2");
+        reference5 = database.getInstance().getReference().child("Secretary_1");
+        reference6 = database.getInstance().getReference().child("Secretary_2");
+        reference7 = database.getInstance().getReference().child("SubSecretary_1");
+        reference8 = database.getInstance().getReference().child("SubSecretary_2");
+        reference9 = database.getInstance().getReference().child("Treasurer_1");
+        reference10 = database.getInstance().getReference().child("Treasurer_2");
+        reference11 = database.getInstance().getReference().child("SubTreasurer_1");
+        reference12 = database.getInstance().getReference().child("SubTreasurer_2");
+        reference13 = database.getInstance().getReference().child("PIO_1");
+        reference14 = database.getInstance().getReference().child("PIO_2");
+        reference15 = database.getInstance().getReference().child("PIO_3");
+        reference16 = database.getInstance().getReference().child("Auditor_1");
+        reference17 = database.getInstance().getReference().child("Auditor_2");
+        reference18 = database.getInstance().getReference().child("Auditor_3");
 
         reference.addValueEventListener(new ValueEventListener() {
             @Override
@@ -112,80 +131,76 @@ public class Success extends AppCompatActivity {
                 member.setName(name.getText().toString());
                 reference.child(String.valueOf(i+1)).setValue(member);
                 if (chk_pres1.isChecked()) {
-                    member.setSelected_pres(select_pres1_ST);
-                    reference.child(String.valueOf(i+1)).setValue(member);
+                    //member.setSelected_pres(select_pres1_ST);
+                    reference1.child(String.valueOf(i+1)).setValue(member);
                 }
                 else if (chk_pres2.isChecked()){
-                    member.setSelected_pres(select_pres2_ST);
-                    reference.child(String.valueOf(i+1)).setValue(member);
+                    //member.setSelected_pres(select_pres2_ST);
+                    reference2.child(String.valueOf(i+1)).setValue(member);
                 }
                 if (chk_vicePres1.isChecked()){
-                    member.setSelected_vicePres(select_vicePres1_ST);
-                    reference.child(String.valueOf(i+1)).setValue(member);
+                    //member.setSelected_vicePres(select_vicePres1_ST);
+                    reference3.child(String.valueOf(i+1)).setValue(member);
                 }
                 else if (chk_vicePres2.isChecked()){
-                    member.setSelected_vicePres(select_vicePres2_ST);
-                    reference.child(String.valueOf(i+1)).setValue(member);
+                    //member.setSelected_vicePres(select_vicePres2_ST);
+                    reference4.child(String.valueOf(i+1)).setValue(member);
                 }
-                if (chk_sec1.isChecked()){
-                    member.setSelected_sec(select_sec1_ST);
-                    reference.child(String.valueOf(i+1)).setValue(member);
+                if (chk_sec1.isChecked()) {
+                    //
+                    reference5.child(String.valueOf(i+1)).setValue(member);
                 }
-                else if (chk_sec2.isChecked()){
-                    member.setSelected_sec(select_sec2_ST);
-                    reference.child(String.valueOf(i+1)).setValue(member);
+                else if (chk_sec2.isChecked()) {
+                    //
+                    reference6.child(String.valueOf(i+1)).setValue(member);
                 }
-                if (chk_subSec1.isChecked()){
-                    member.setSelected_subSec(select_subSec1_ST);
-                    reference.child(String.valueOf(i+1)).setValue(member);
+                if (chk_subSec1.isChecked()) {
+                    //
+                    reference7.child(String.valueOf(i+1)).setValue(member);
                 }
-                else if (chk_subSec2.isChecked()){
-                    member.setSelected_subSec(select_subSec2_ST);
-                    reference.child(String.valueOf(i+1)).setValue(member);
+                else if (chk_subSec2.isChecked()) {
+                    //
+                    reference8.child(String.valueOf(i+1)).setValue(member);
                 }
-                if (chk_tres1.isChecked()){
-                    member.setSelected_tres(select_tres1_ST);
-                    reference.child(String.valueOf(i+1)).setValue(member);
+                if (chk_tres1.isChecked()) {
+                    //
+                    reference9.child(String.valueOf(i+1)).setValue(member);
                 }
-                else if (chk_tres2.isChecked()){
-                    member.setSelected_tres(select_tres2_ST);
-                    reference.child(String.valueOf(i+1)).setValue(member);
+                else if (chk_tres2.isChecked()) {
+                    //
+                    reference10.child(String.valueOf(i+1)).setValue(member);
                 }
-                if (chk_subTres1.isChecked()){
-                    member.setSelected_subTres(select_subtres1_ST);
-                    reference.child(String.valueOf(i+1)).setValue(member);
+                if (chk_subTres1.isChecked()) {
+                    //
+                    reference11.child(String.valueOf(i+1)).setValue(member);
                 }
-                else if (chk_subTres2.isChecked()){
-                    member.setSelected_subTres(select_subtres2_ST);
-                    reference.child(String.valueOf(i+1)).setValue(member);
+                else if (chk_subTres2.isChecked()) {
+                    //
+                    reference12.child(String.valueOf(i+1)).setValue(member);
                 }
-                if (chk_pio1.isChecked()){
-                    member.setSelected_PIO1(select_poi1_ST);
-                    reference.child(String.valueOf(i+1)).setValue(member);
+                if (chk_pio1.isChecked()) {
+                    //
+                    reference13.child(String.valueOf(i+1)).setValue(member);
                 }
-                if (chk_pio2.isChecked()){
-                    member.setSelected_PIO2(select_poi2_ST);
-                    reference.child(String.valueOf(i+1)).setValue(member);
+                if (chk_pio2.isChecked()) {
+                    //
+                    reference14.child(String.valueOf(i+1)).setValue(member);
                 }
-                if (chk_pio3.isChecked()){
-                    member.setSelected_PIO3(select_poi3_ST);
-                    reference.child(String.valueOf(i+1)).setValue(member);
+                if (chk_pio3.isChecked()) {
+                    //
+                    reference15.child(String.valueOf(i+1)).setValue(member);
                 }
-                if (chk_auditor1.isChecked()){
-                    member.setSelected_Auditor1(select_auditor1_ST);
-                    reference.child(String.valueOf(i+1)).setValue(member);
+                if (chk_auditor1.isChecked()) {
+                    //
+                    reference16.child(String.valueOf(i+1)).setValue(member);
                 }
-                if (chk_auditor2.isChecked()){
-                    member.setSelected_Auditor2(select_auditor2_ST);
-                    reference.child(String.valueOf(i+1)).setValue(member);
+                if (chk_auditor2.isChecked()) {
+                    //
+                    reference17.child(String.valueOf(i+1)).setValue(member);
                 }
-                if (chk_auditor3.isChecked()){
-                    member.setSelected_Auditor3(select_auditor3_ST);
-                    reference.child(String.valueOf(i+1)).setValue(member);
-                }
-
-                else {
-                    Toast.makeText(Success.this, "Complete your voting before submitting", Toast.LENGTH_SHORT).show();
+                if (chk_auditor3.isChecked()) {
+                    //
+                    reference18.child(String.valueOf(i+1)).setValue(member);
                 }
 
                 Intent intent = new Intent(Success.this, Done.class);

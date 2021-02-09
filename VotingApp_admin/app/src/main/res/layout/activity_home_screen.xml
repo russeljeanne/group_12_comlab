@@ -19,7 +19,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/bungee"
-                android:text="List of Candidates with counts of votes"
+                android:text="List of Candidates with number of votes"
                 android:textSize="30sp" />
             <TextView
                 android:layout_width="wrap_content"
@@ -38,6 +38,7 @@
                     android:textSize="15sp"
                     android:layout_marginRight="20dp"/>
                 <TextView
+                    android:id="@+id/pres1_count"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text=": Count"
@@ -54,6 +55,7 @@
                     android:textSize="15sp"
                     android:layout_marginRight="20dp"/>
                 <TextView
+                    android:id="@+id/pres2_count"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text=": Count"
@@ -76,6 +78,7 @@
                     android:textSize="15sp"
                     android:layout_marginRight="20dp"/>
                 <TextView
+                    android:id="@+id/vicepres1_count"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text=": Count"
@@ -92,6 +95,7 @@
                     android:textSize="15sp"
                     android:layout_marginRight="20dp"/>
                 <TextView
+                    android:id="@+id/vicepres2_count"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text=": Count"
@@ -114,6 +118,7 @@
                     android:textSize="15sp"
                     android:layout_marginRight="20dp"/>
                 <TextView
+                    android:id="@+id/sec1_count"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text=": Count"
@@ -130,6 +135,7 @@
                     android:textSize="15sp"
                     android:layout_marginRight="20dp"/>
                 <TextView
+                    android:id="@+id/sec2_count"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text=": Count"
@@ -152,6 +158,7 @@
                     android:textSize="15sp"
                     android:layout_marginRight="20dp"/>
                 <TextView
+                    android:id="@+id/subSec1_count"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text=": Count"
@@ -168,6 +175,7 @@
                     android:textSize="15sp"
                     android:layout_marginRight="20dp"/>
                 <TextView
+                    android:id="@+id/subSec2_count"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text=": Count"
@@ -190,6 +198,7 @@
                     android:textSize="15sp"
                     android:layout_marginRight="20dp"/>
                 <TextView
+                    android:id="@+id/tres1_count"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text=": Count"
@@ -206,6 +215,7 @@
                     android:textSize="15sp"
                     android:layout_marginRight="20dp"/>
                 <TextView
+                    android:id="@+id/tres2_count"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text=": Count"
@@ -228,6 +238,7 @@
                     android:textSize="15sp"
                     android:layout_marginRight="20dp"/>
                 <TextView
+                    android:id="@+id/subTres1_count"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text=": Count"
@@ -244,6 +255,7 @@
                     android:textSize="15sp"
                     android:layout_marginRight="20dp"/>
                 <TextView
+                    android:id="@+id/subTres2_count"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text=": Count"
@@ -266,6 +278,7 @@
                     android:textSize="15sp"
                     android:layout_marginRight="20dp"/>
                 <TextView
+                    android:id="@+id/pio1_count"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text=": Count"
@@ -282,6 +295,7 @@
                     android:textSize="15sp"
                     android:layout_marginRight="20dp"/>
                 <TextView
+                    android:id="@+id/pio2_count"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text=": Count"
@@ -298,6 +312,8 @@
                     android:textSize="15sp"
                     android:layout_marginRight="20dp"/>
                 <TextView
+
+                    android:id="@+id/pio3_count"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text=": Count"
@@ -320,6 +336,7 @@
                     android:textSize="15sp"
                     android:layout_marginRight="20dp"/>
                 <TextView
+                    android:id="@+id/auditor1_count"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text=": Count"
@@ -336,6 +353,7 @@
                     android:textSize="15sp"
                     android:layout_marginRight="20dp"/>
                 <TextView
+                    android:id="@+id/auditor2_count"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text=": Count"
@@ -352,6 +370,7 @@
                     android:textSize="15sp"
                     android:layout_marginRight="20dp"/>
                 <TextView
+                    android:id="@+id/auditor3_count"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text=": Count"
